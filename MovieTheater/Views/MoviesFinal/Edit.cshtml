@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+ 
+
+
+<form method="post">
+    Movie Name: <input type="text" name="MovieName" value="@Model.MovieName"/><br />
+    Run Time: <input type="text" name="RunTime" value="@Model.RunTime"/><br /> 
+    Director Name: <input type="text" name="DirectorName" value = "@Model.DirectorName"/><br />
+    <input type="submit" />
+
+</form>
+
+
+@if (Model.MovieName != null)
+{
+    <div>You have created "@Model.MovieName" by "@Model.DirectorName" that plays for @Model.RunTime minutes. </div>
+    //returned data from controllers can be accessed as "Model" in View
+}
+</br>
+     <a href="~/MoviesFinal/Index"><button type="button">DELETE</button></a>

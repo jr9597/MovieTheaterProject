@@ -1,0 +1,12 @@
+C:\Users\JerrodK\source\repos\MovieTheater\MovieTheater.Data\bin\Release\netcoreapp2.1\MovieTheater.Data.deps.json
+C:\Users\JerrodK\source\repos\MovieTheater\MovieTheater.Data\bin\Release\netcoreapp2.1\MovieTheater.Data.dll
+C:\Users\JerrodK\source\repos\MovieTheater\MovieTheater.Data\bin\Release\netcoreapp2.1\MovieTheater.Data.pdb
+C:\Users\JerrodK\source\repos\MovieTheater\MovieTheater.Data\bin\Release\netcoreapp2.1\MovieTheater.Core.dll
+C:\Users\JerrodK\source\repos\MovieTheater\MovieTheater.Data\bin\Release\netcoreapp2.1\MovieTheater.Core.pdb
+C:\Users\JerrodK\source\repos\MovieTheater\MovieTheater.Data\obj\Release\netcoreapp2.1\MovieTheater.Data.csprojAssemblyReference.cache
+C:\Users\JerrodK\source\repos\MovieTheater\MovieTheater.Data\obj\Release\netcoreapp2.1\MovieTheater.Data.csproj.CoreCompileInputs.cache
+C:\Users\JerrodK\source\repos\MovieTheater\MovieTheater.Data\obj\Release\netcoreapp2.1\MovieTheater.Data.AssemblyInfoInputs.cache
+C:\Users\JerrodK\source\repos\MovieTheater\MovieTheater.Data\obj\Release\netcoreapp2.1\MovieTheater.Data.AssemblyInfo.cs
+C:\Users\JerrodK\source\repos\MovieTheater\MovieTheater.Data\obj\Release\netcoreapp2.1\MovieTheater.Data.csproj.CopyComplete
+C:\Users\JerrodK\source\repos\MovieTheater\MovieTheater.Data\obj\Release\netcoreapp2.1\MovieTheater.Data.dll
+C:\Users\JerrodK\source\repos\MovieTheater\MovieTheater.Data\obj\Release\netcoreapp2.1\MovieTheater.Data.pdb

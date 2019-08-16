@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "MovieThis";
+}
+
+<h2>MovieThis</h2>
+
+
+@foreach (var v in Model)
+{
+    <div> @v.MovieName</div>
+}
+
+<form method="post">
+<input type = "text" name="Organization" /><br/>
+</form>

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MovieTheater.Core\MovieTheater.Core.csproj" />
+    <ProjectReference Include="..\MovieTheater.Database\MovieTheater.Database.csproj" />
+    <ProjectReference Include="..\MovieTheater.Data\MovieTheater.Data.csproj" />
+  </ItemGroup>
+
+</Project>

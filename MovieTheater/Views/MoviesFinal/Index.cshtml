@@ -1,0 +1,101 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<p>whatsup</p>
+<body style="background-color:cadetblue">
+    <center>
+        <img src=" https://pmcvariety.files.wordpress.com/2017/11/regal-cinemas-logo.jpg?w=1000&h=562&crop=1" alt="Regal" width="500" height="270" />
+    </center>
+    <div class="text-center">
+
+        <h1 class="display-4"> Welcome To Regal </h1>
+        <h1><a href="~/MoviesFinal/Edit">Create a Movie Here</a> </h1>
+    </div>
+
+
+    <div id="movies"></div>
+    <center><input type="button" id="thisButton" value="Get Movies" onclick="getMovies()" /></center>
+    <script>
+        function getMovies() {
+            $.ajax({
+                url: 'https://movietheaterwebapp20190613024903.azurewebsites.net/api/movies/',
+                type: 'GET',
+                success: function (data, request) {
+                    // this success function is a callback function
+                    // data from Movies comes in arrays, so loop through the array
+                    for (var i = 0; i < data.length; i++) {
+                        //$('#movies').append('<div>' + data[i].movieName + `<input type="button" value = "EXTERMINATE" onclick = "deleteMovies(\'${data[i].id}\')"></div>`);  //movies is an id from above
+                        //$('#movies').append('<div style="background-color: lightblue">' + '<center>' + `<a href="~/MoviesFinal/Edit/\'${data[i].id}\'">` + data[i].movieName + `</a>` + " " + " " + `<input type="button" value = "EXTERMINATE" onclick = "deleteMovies(\'${data[i].id}\')"> </center> </div>`);
+                        
+                        $('#movies').append('<br>' + '<div style="background-color: lightblue">' + '<center>' + `<a href="MoviesFinal/Edit/${data[i].id}">` + data[i].movieName +" (Click to Edit)"+ `</a>` + " " + " " + `<input type="button" value = "Delete" onclick = "deleteMovies(\'${data[i].id}\')"> </center> </div>`);
+                        $('#movies').append('<center>' + `<input type="button" id = iAmButton${i} value="Get Info: ${data[i].movieName}" onclick="getInfo(${data[i].id}, ${i})"></center> </div >`);
+                        $('#movies').append(`<div id="thisLine${i}"></div>`);
+                        $('#movies').append(`<div id="thisLine${i}"></div>`);
+                        //if you look at the data that comes from api ont the web, it says movieName instead of MovieName
+                        //$('#movies').append('<center>' + "12:00" + " 15:00 " + " 18:00 " + '</center>');
+
+                    }
+                },
+                error: function (request) {
+                    // handle error
+                }
+            })
+            $('#thisButton').hide();
+        }
+
+        function deleteMovies(id) {
+            $.ajax({
+                url: 'https://movietheaterwebapp20190613024903.azurewebsites.net/api/movies/' + id,
+                type: 'DELETE',
+                success: function () {
+                    //alert("movie deleted!");
+                    $('#movies').html("");
+                    getMovies();
+                    //$ means you are using jquery library
+                },
+                error: function (request) {
+                    // handle error
+                }
+            })
+
+        }
+
+
+        function getInfo(id, k) {
+            $.ajax({
+                url: 'https://movietheaterwebapp20190613024903.azurewebsites.net/api/movies/' + id,
+                type: 'GET',
+                success: function (data) {
+                    for (var i = 0; i < data.length; i++) {
+                        $(`#iAmButton${k}`).hide();
+                        $(`#thisLine${k}`).append('<center>' + '<stan style="background-color: yellow">' + `${data[i].movieName}` + '<br>' + "Director(s) = " + `${data[i].directorName}` + '<br>' + "Running Time = " + `${data[i].runTime}` + " minutes" + '</stan>' +'</center>');
+                        $(`#thisLine${k}`).append('<center>' + '<a href = "https://www.showtimes.com/movie-theaters/edwards-marketplace-stadium-10-5787/" target="_blank">' + `<input type="button" value = "View Timeslots">` + '</a>' + '</center>');
+                        //alert("hi");
+                    }
+                }
+            })
+        }
+    </script>
+
+
+
+
+    <!--
+    <p>You can edit the items below. Click on them!</p>
+    @foreach (var v in Model)
+    {
+        <div>
+            <ul>
+                <li><a href="~/MoviesFinal/Edit/@v.Id">@v.MovieName</a></li>
+            </ul>
+        </div>
+        //Convention of naming an edit button is -> ControllerName, ActionName, Id
+        //See that the button just simply redirects to an edit page
+    }
+
+    <!-- -->
+    
+
+</body>
+

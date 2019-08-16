@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <UserSecretsId>2c466263-9b63-486a-9e6e-a46bc6ec5307</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.60.6" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MovieTheater.Core\MovieTheater.Core.csproj" />
+    <ProjectReference Include="..\MovieTheater.Database\MovieTheater.Database.csproj" />
+    <ProjectReference Include="..\MovieTheater.Data\MovieTheater.Data.csproj" />
+    <ProjectReference Include="..\MovieTheaterService\MovieTheater.Service.csproj" />
+  </ItemGroup>
+
+</Project>

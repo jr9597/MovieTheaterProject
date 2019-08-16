@@ -1,0 +1,9 @@
+C:\Users\JerrodK\source\repos\MovieTheater\MovieTheater.Core\bin\Debug\netcoreapp2.1\MovieTheater.Core.deps.json
+C:\Users\JerrodK\source\repos\MovieTheater\MovieTheater.Core\bin\Debug\netcoreapp2.1\MovieTheater.Core.dll
+C:\Users\JerrodK\source\repos\MovieTheater\MovieTheater.Core\bin\Debug\netcoreapp2.1\MovieTheater.Core.pdb
+C:\Users\JerrodK\source\repos\MovieTheater\MovieTheater.Core\obj\Debug\netcoreapp2.1\MovieTheater.Core.csproj.CoreCompileInputs.cache
+C:\Users\JerrodK\source\repos\MovieTheater\MovieTheater.Core\obj\Debug\netcoreapp2.1\MovieTheater.Core.AssemblyInfoInputs.cache
+C:\Users\JerrodK\source\repos\MovieTheater\MovieTheater.Core\obj\Debug\netcoreapp2.1\MovieTheater.Core.AssemblyInfo.cs
+C:\Users\JerrodK\source\repos\MovieTheater\MovieTheater.Core\obj\Debug\netcoreapp2.1\MovieTheater.Core.dll
+C:\Users\JerrodK\source\repos\MovieTheater\MovieTheater.Core\obj\Debug\netcoreapp2.1\MovieTheater.Core.pdb
+C:\Users\JerrodK\source\repos\MovieTheater\MovieTheater.Core\obj\Debug\netcoreapp2.1\MovieTheater.Core.csprojAssemblyReference.cache
